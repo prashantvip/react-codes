@@ -1,9 +1,18 @@
 import React from "react";
 import ReactDom from "react-dom";
 
+import "./index.css"
+
 function BookList(){
   return(
-    <section>
+    <section className="booklist">
+      <Book/>
+      <Book/>
+      <Book/>
+      <Book/>
+      <Book/>
+      <Book/>
+      <Book/>
       <Book/>
     </section>
   )
@@ -12,7 +21,7 @@ function BookList(){
 
 const Book = () =>{
   return (
-    <div>
+    <div className="book">
       <Image/>
       <Title/>
       <Author/>
@@ -25,7 +34,7 @@ const Image = () =>{
 }
 
 const Title = () =>{
-  return <h3>I Love You to the Moon And Back</h3>
+  return <h1>I Love You to the Moon And Back</h1>
 }
 
 const Author = () =>{
