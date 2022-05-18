@@ -7,38 +7,22 @@ function BookList(){
   return(
     <section className="booklist">
       <Book/>
-      <Book/>
-      <Book/>
-      <Book/>
-      <Book/>
-      <Book/>
-      <Book/>
-      <Book/>
     </section>
   )
 }
 
-
+const author = 'by Amelia Hepworth and Tim Warnes'
 const Book = () =>{
+  const title = 'I Love You to the Moon And Back'
   return (
     <div className="book">
-      <Image/>
-      <Title/>
-      <Author/>
+      <img src="https://m.media-amazon.com/images/I/91hIsjFuICL._AC_UY218_.jpg" alt="" />
+      <h1>{title}</h1>
+      <h4>{author}</h4>
+      <p>{'hello'}</p>
     </div>
   )
 }
 
-const Image = () =>{
-  return <img src="https://m.media-amazon.com/images/I/91hIsjFuICL._AC_UY218_.jpg" alt="" />
-}
-
-const Title = () =>{
-  return <h1>I Love You to the Moon And Back</h1>
-}
-
-const Author = () =>{
-  return <h4>by Amelia Hepworth and Tim Warnes</h4>
-}
 
 ReactDom.render(<BookList/>,document.getElementById("root"));
