@@ -1,3 +1,6 @@
+
+// Default export
+
 const Book = (props) =>{
   // console.log(props);
   const {img,title,author} = props //props.book when book={book}
