@@ -8,10 +8,6 @@ const Navbar = () => {
   const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
 
-  // const toggleLinks = () => {
-  //   setShowLinks(!showLinks);
-  // };
-
    useEffect(() => {
     const linksHeight = linksRef.current.getBoundingClientRect().height;
     if (showLinks) {
