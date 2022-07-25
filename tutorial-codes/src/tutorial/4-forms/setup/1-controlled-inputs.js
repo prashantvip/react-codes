@@ -19,6 +19,7 @@ const ControlledInputs = () => {
       })
       setFirstName('');
       setEmail('');
+      console.log(person);
     }else{
       console.log("empty values");
     }
